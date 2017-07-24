@@ -18,7 +18,8 @@ It then assigns column names to the data and merges the training and test sets i
 and standard deviations of the variables are saved into another data set and appropriately labeled. Finally, a tidy set with the 
 average of each variable for each activity and each subject is created and is included in this repository. The variables included in the
 tidy set are listed below. They correspond to triaxial acceleration from an accelerometer (total acceleration) and the estimated body 
-acceleration, triaxial Angular velocity from the gyroscope, and a feature vector with time and frequency domain variables. 
+acceleration, triaxial Angular velocity from the gyroscope, and a feature vector with time and frequency domain variables. The data were 
+taken at a rate of 50Hz. -XYZ correspond to the X,Y,Z directions. 
 
 "SubjectLabel"                                    
 "ActivityLabel"                                   
