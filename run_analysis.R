@@ -38,10 +38,8 @@ full_set <- rbind(training_set,test_set) # row bind since it's by subject
 # 2) Extract measurements on the mean and std
 # looking at the labels, we search for "mean" and "std" with grepl
 full_column_names <- colnames(full_set)
-extracted_columns <- (grepl("SubjectLabel",full_column_names) | 
-                      grepl("ActivityLabel",full_column_names) |
-                      grepl("mean..",full_column_names) |
-                      grepl("std..",full_column_names))
+extracted_columns <- (grepl("SubjectLabel",full_column_names) | grepl("ActivityLabel",full_column_names) |
+                      grepl("mean..",full_column_names) | grepl("std..",full_column_names))
 mean_std_set <- full_set[,extracted_columns]
 
 # 3) Label the activities in the data set with descriptive names
